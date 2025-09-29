@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Table New Columns</title>
+</head>
+<body>
+ <center>
+    <h1 style="color: purple;">Long Tables Will Border & Background Table</h1>
+    <p style="color: purple;">The Border Attribute Was Used on Both And Elements To Indicate The Width of the Border in Pixels.</p>
+
+    <a href="index table heading.html">Table Headings 1</a>
+    <a href="index geeks.html">Table No About 2</a>
+    <a href="index table no.html">Heading Table 3</a>
+    <a href="Using tables.html">Table Using Contact 4</a>
+</center>
+
+<table border="1" cellspacing="0" cellspacing="10" align="center" width="950" height="600">
+    <tr>
+        <td colspan="2"><center>1</td></center>
+        <td><center>2</td></center>
+        <td rowspan="2"><center>3</td></center>
+        <td colspan="2"><center>4</td></center>
+    </tr>
+
+    <tr>
+        <td><center>5</td></center>
+        <td><center>6</td></center>
+        <td><center>7</td></center>
+        <td colspan="2"><center>8</td></center>
+    </tr>
+
+    <tr>
+        <td><center>9</td></center>
+        <td><center>10</td></center>
+        <td colspan="2"><center>11</td></center>
+        <td><center>12</td></center>
+        <td><center>13</td></center>
+    </tr>
+
+    <tr>
+        <td rowspan="2"><center>14</td></center>
+        <td colspan="2"><center>15</td></center>
+        <td colspan="2"><center>16</td></center>
+        <td colspan="2"><center>17</td></center>
+        <td colspan="2"><center>18</td></center>
+    </tr>
+
+    <tr>
+        <td colspan="2"><center>19</td></center>
+        <td><center>20</td></center>
+        <td><center>21</td></center>
+        <td rowspan="2"><center>22</td></center>
+    </tr>
+
+    <tr>
+        <td rowspan="2"><center>23</td></center>
+        <td><center>24</td></center>
+        <td colspan="2"><center>25</td></center>
+        <td><center>26</td></center>
+    </tr>
+
+    <tr>
+        <td><center>27</td></center>
+        <td colspan="2"><center>28</td></center>
+        <td colspan="2"><center>29</td></center>
+    </tr>
+
+    <tr>
+        <td><center>30</td></center>
+        <td><center>31</td></center>
+        <td rowspan="2"><center>32</td></center>
+        <td rowspan="2"><center>33</td></center>
+        <td rowspan="2"><center>34</td></center>
+        <td rowspan="2"><center>35</td></center>
+    </tr>
+</table>
+
+<center>
+    <h1 style="color:purple;">Basic Structure Table Using Headings</h1>
+    <p style="color: darkgoldenrod;">By Default Browsers Rarely Treat the Content of These Elements.</p>
+</center>
+
+    <div class="wrape">
+<head>
+    <style>
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    background:#f0f0f2;
+    display:flex;
+    justify-content:center;
+    padding:24px;
+  }
+  .outer {
+    background:#b98484;
+    padding:18px;
+    border:1px solid #b0b0b0;
+    max-width:900px;
+    width:100%;
+    box-shadow:0 2px 6px rgba(0,0,0,0.06);
+  }
+
+  caption {
+    font-weight:700;
+    font-size:1.25rem;
+    margin-bottom:12px;
+  }
+
+  table {
+    border-collapse:collapse;
+    width:100%;
+  }
+
+  th, td {
+    border:2px solid #6a6a6a;
+    padding:10px;
+    vertical-align:top;
+  }
+
+  th {
+    background:#efefef;
+    text-align:left;
+  }
+
+  .col-1 { width:18%; } 
+  .col-2 { width:82%; }
+
+  .inner-container {
+    background:#f6ea5a;
+    padding:12px;
+    border:6px solid #b6d000; 
+  }
+
+  .inner-heading {
+    background:#ffd800;
+    padding:10px;
+    font-weight:700;
+    margin-bottom:10px;
+    text-align:center;
+  }
+
+  .tall-cell {
+    background:#5fb3b3;
+    min-height:160px;
+    padding:14px;
+    color:#1b3b3b;
+  }
+
+  .innermost {
+    border-collapse:collapse;
+    width:100%;
+    margin-top:6px;
+  }
+
+  .innermost td {
+    border:2px solid #c77fb4;
+    background:#f2d7f0;
+    padding:10px;
+    text-align:center;
+  }
+
+  .innermost .right {
+    background:#f7bfb3;
+    border-color:#ea9a88;
+  }
+
+  .label {
+    font-weight:700;
+    margin-bottom:6px;
+    display:block;
+  }
+
+  @media (max-width:640px){
+    .col-1, .col-2 { width:auto; display:block; }
+    .outer { padding:12px; }
+  }
+</style>
+</head>
+<center>
+        <table class="outer-table" border="1" align="center" width="900"px height="400"px>
+            <h1 style="color:purple;">Using TABLES in Websites</h1>
+
+            <h2 style="color: darkblue;">Caption: Nested Table</h2>
+  <thead>
+      <thead>
+        <tr>
+          <th class="col-1">Column 1</th>
+          <th class="col-2">Column 2</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td colspan="2" style="text-align:center; background:#fafafa; font-weight:600;">
+            Colspan Column
+          </td>
+        </tr>
+
+        <tr>
+          <td rowspan="2" class="tall-cell" style="width:18%;">
+            <span class="label">Rowspan Cell</span>
+            Inner Data Cell 1
+          </td>
+
+          <td>
+            <div class="inner-container">
+              <div class="inner-heading">Inner Column Heading 2</div>
+
+              <table style="width:100%; border-collapse:collapse;">
+                <tr>
+                  <td style="width:40%; vertical-align:top; padding:8px;">
+                    <div style="background:#ffd800; padding:10px; font-weight:700; text-align:center;">
+                      Inner Column Heading 1
+                    </div>
+                    <div style="margin-top:10px; min-height:120px; background:#ddf2e0; padding:10px;">
+                      Inner Data Cell
+                    </div>
+                  </td>
+                  <td style="width:60%; vertical-align:top; padding:12px;">
+                    <div style="background:#f7f0ff; padding:10px;">
+                      <div style="font-weight:700; margin-bottom:10px; text-align:center;">Inner Most Column Heading</div>
+
+                      <table class="innermost" role="group" aria-label="Innermost cells">
+                        <tr>
+                          <td>Inner Most Column Heading 1</td>
+                          <td class="right">Inner Most Column Heading 2</td>
+                        </tr>
+                        <tr>
+                          <td style="background:#e8d3f0; border-color:#caa5d6;">Innermost Data Cell 1</td>
+                          <td class="right">Innermost Data Cell 2</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:10px; background:#ffffff;">
+            Cell 2 — extra row under the nested area (this pairs with left rowspan cell).
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</center>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Which Can Table</title>
+    <style>
+        table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: aqua;
+        }
+        .nested th {
+            background-color: gold;
+        }
+    </style>
+</head>
+<body bgcolor="#16E2F5">
+<center>
+    <h1>How to represent complex data in tables</h1>
+
+    <p>There are Several Types of Information that Need to be Displayed in a Grid or Table.</p>
+
+    <a href="index table heading.html">Table Using Columns Contact 1</a>
+    <a href="Using tables.html">Table Home 2</a>
+    <a href="index geeks.html">Table No About 3</a>
+    <a href="index table no.html">Heading Table 4</a>
+</center>
+
+<table border="1" cellspacing="0" cellspacing="10" align="center" width="900" height="400">
+        <tr>
+            <th>Device</th>
+            <th>Brand</th>
+            <th>Specifications</th>
+        </tr>
+        <tr>
+            <td><center>Smartphone</td></center>
+            <td><center>Apple</td></center>
+            <td>
+                <table class="nested">
+                    <tr>
+                        <th colspan="2"><center>Model</th></center>
+                        <th colspan="2"><center>Storage</th></center>
+                    </tr>
+                    <tr>
+                       <td><center>iPhone 12 Pro</td></center>
+                        <td><center>256GB</td></center>
+                    </tr>
+                    <tr>
+                        <td><center>iPhone SE</td></center>
+                        <td><center>128GB</td></center>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td><center>Laptop</td></center>
+            <td><center>HP</td></center>
+            <td><center>15.6 Display</td></center>
+        </tr>
+        <tr>
+            <td><center>Tablet</td></center>
+            <td><center>Samsung</td></center>
+            <td><center>10.5 Display</td></center>
+        </tr>
+    </table>
+</body>
+</html>
